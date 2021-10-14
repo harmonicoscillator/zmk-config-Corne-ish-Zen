@@ -67,7 +67,7 @@
    &none &kp LBRC   &kp AMPS   &kp STAR   &kp LPAR     &kp RBRC    &none    &none       &none       &none     &none    &none
    &none &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS    &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI &none
    &none &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE    &none    &none       &none       &none     &none    &none
-                        &kp GT &kp RPAR   &kp UNDER                &lt SYM TAB &lt SPACE &kp DEL
+                        &kp GT &kp RPAR   &kp UNDER                &lt SYM TAB &kp SPACE &kp DEL
                         >;
                 };
 
@@ -77,7 +77,7 @@
    &none &kp F12    &kp F7     &kp F8     &kp F9       &kp PSCRN   &none    &none       &none       &none     &none    &none
    &none &kp F11    &kp F4     &kp F5     &kp F6       &none       &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI &none
    &none &kp F10    &kp F1     &kp F2     &kp F3       &none       &none    &none       &none       &none     &none    &none
-                        &kp ESC &kp BKSP &kp ENTER                 &kp TAB &lt SPACE &lt FKY DEL
+                        &kp ESC &kp BKSP &kp ENTER                 &kp TAB &kp SPACE &lt FKY DEL
                         >;
                 };
 
