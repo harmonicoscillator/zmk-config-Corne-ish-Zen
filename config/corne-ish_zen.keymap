@@ -24,9 +24,9 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &kp Q      &kp W      &kp E       &kp R        &kp T    &kp Y &kp U        &kp I         &kp O        &kp P    
-   &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G    &kp H &mt RSHIFT J &mt RCTRL K   &mt RALT L   &mt RGUI QUOT
-   &kp Z      &kp X      &kp C       &kp V        &kp B    &kp N &kp M        &kp CMMA      &kp DOT      &kp FSLH 
+   &none &kp Q      &kp W      &kp E       &kp R        &kp T    &kp Y &kp U        &kp I         &kp O        &kp P          &none 
+   &none &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G    &kp H &mt RSHIFT J &mt RCTRL K   &mt RALT L   &mt RGUI QUOT   &none 
+   &none &kp Z      &kp X      &kp C       &kp V        &kp B    &kp N &kp M        &kp CMMA      &kp DOT      &kp FSLH       &none 
             &lt MED ESC &lt NAV BKSP &kp ENTER                &lt SYM TAB &lt NUM SPC &lt FKY DEL
                         >;
                 };
@@ -34,9 +34,9 @@
                 nav_layer {
                         label = "NAV";
                         bindings = <
-   &none      &none      &none      &none        &none    &none    &none       &none       &none     &none    
-   &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &kp CAPS &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT
-   &none      &none      &none      &none        &none    &kp INS  &kp HOME    &kp PG_DN   &kp PG_UP &kp END
+   &none &none      &none      &none      &none        &none    &none    &none       &none       &none     &none    &none 
+   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &kp CAPS &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &none 
+   &none &none      &none      &none      &none        &none    &kp INS  &kp HOME    &kp PG_DN   &kp PG_UP &kp END &none 
                   &kp ESC &lt NAV BKSP &kp ENTER                &kp TAB &kp SPC &kp DEL
                        >;
                 };
@@ -44,9 +44,9 @@
                 med_layer {
                         label = "MED";
                         bindings = <
-   &none      &none      &none      &none        &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &bt BT_CLR   
-   &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &none    &kp MUTE    &kp VOLD    &kp VOLU  &none   
-   &none      &none      &none      &none        &none    &none    &none       &none       &none     &none
+   &none &none      &none      &none      &none        &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none 
+   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &none    &kp MUTE    &kp VOLD    &kp VOLU  &none   &none
+   &none &none      &none      &none      &none        &none    &none    &none       &none       &none     &bt BT_CLR   &none
                   &lt MED ESC &kp BKSP &kp ENTER                &kp TAB &kp SPC &kp DEL
                        >;
                 };
@@ -54,9 +54,9 @@
                 num_layer {
                         label = "NUM";
                         bindings = < 
-   &kp LBKT   &kp N7     &kp N8     &kp N9       &kp RBKT    &none    &none       &none       &none     &none    
-   &kp SEMI   &kp N4     &kp N5     &kp N6       &kp EQUAL   &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI
-   &kp GRAVE  &kp N1     &kp N2     &kp N3       &kp BSLS    &none    &none       &none       &none     &none
+   &none &kp LBKT   &kp N7     &kp N8     &kp N9       &kp RBKT    &none    &none       &none       &none     &none    &none
+   &none &kp SEMI   &kp N4     &kp N5     &kp N6       &kp EQUAL   &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI  &none
+   &none &kp GRAVE  &kp N1     &kp N2     &kp N3       &kp BSLS    &none    &none       &none       &none     &none  &none
                   &kp DOT &kp N0    &kp MINUS                &kp TAB &lt NUM SPC &kp DEL
                         >;
                 };
@@ -64,9 +64,9 @@
                 sym_layer {
                         label = "SYM";
                         bindings = <
-   &kp LBRC   &kp AMPS   &kp STAR   &kp LPAR     &kp RBRC    &none    &none       &none       &none     &none    
-   &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS    &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI
-   &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE    &none    &none       &none       &none     &none
+   &none &kp LBRC   &kp AMPS   &kp STAR   &kp LPAR     &kp RBRC    &none    &none       &none       &none     &none    &none
+   &none &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET    &kp PLUS    &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI &none
+   &none &kp TILDE  &kp EXCL   &kp AT     &kp HASH     &kp PIPE    &none    &none       &none       &none     &none  &none
                   &kp GT &kp RPAR   &kp UNDER                &lt SYM TAB &lt SPC &kp DEL
                         >;
                 };
@@ -74,9 +74,9 @@
                 fkey_layer {
                         label = "FKY";
                         bindings = <
-   &kp F12    &kp F7     &kp F8     &kp F9       &kp PSCRN   &none    &none       &none       &none     &none    
-   &kp F11    &kp F4     &kp F5     &kp F6       &none       &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI
-   &kp F10    &kp F1     &kp F2     &kp F3       &none       &none    &none       &none       &none     &none
+   &none &kp F12    &kp F7     &kp F8     &kp F9       &kp PSCRN   &none    &none       &none       &none     &none    &none
+   &none &kp F11    &kp F4     &kp F5     &kp F6       &none       &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI &none
+   &none &kp F10    &kp F1     &kp F2     &kp F3       &none       &none    &none       &none       &none     &none &none
                       &kp GT &kp RPAR   &kp UNDER                &kp TAB &lt SPC &lt FKY DEL
                         >;
                 };
