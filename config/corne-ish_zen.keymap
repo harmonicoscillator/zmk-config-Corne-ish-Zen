@@ -10,12 +10,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWERTY 0
-#define NAV 1
-#define MED 2
-#define NUM 3
-#define SYM 4
-#define FKY 5
-//#define MOUSE 6
+#define RPG 1
+#define DIAB 2
+#define NAV 3
+#define MED 4
+#define NUM 5
+#define SYM 6
+#define FKY 7
 
 / {
     behaviors {
@@ -43,20 +44,41 @@
                         >;
                 };
 
+                rpg_layer {
+                        label = "RPG";
+                        bindings = <
+   &none &kp Q      &kp W      &kp E      &kp R        &kp T    &none    &none       &none       &none      &none     &none 
+   &none &kp A      &kp S      &kp D      &kp F        &kp G    &none    &kp LEFT    &kp DOWN    &kp UP     &kp RIGHT &none 
+   &none &kp Z      &kp X      &kp C      &kp V        &kp B    &none    &none       &kp RCTRL   &kp RSHIFT &none   &none 
+                  &lt MED ESC &kp BKSP &kp SPACE                &kp ENTER &kp SPACE &kp ESC
+                       >;
+                };
+                
+                
+                diab_layer {
+                        label = "DIAB";
+                        bindings = <
+   &none &kp F1     &kp F2     &kp F3     &kp F4       &kp F5   &kp Y &kp U        &kp I         &kp O        &kp P          &none 
+   &none &kp A      &kp S      &kp LCTRL  &kp LSHIFT   &kp TAB  &kp H &kp J        &kp K         &kp L        &kp QUOT       &none 
+   &none &kp N1     &kp N2     &kp N3     &kp N4       &kp B    &kp N &kp M        &kp CMMA      &kp DOT      &kp FSLH       &none 
+                        &kp ESC &kp SAPCE &kp ENTER    &kp TAB &kp SPACE &lt FKY DEL
+                        >;
+                };
+
                 nav_layer {
                         label = "NAV";
                         bindings = <
-   &none &none      &none      &none      &none        &none    &none    &none       &none       &none     &none     &none 
-   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &kp CAPS &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &none 
-   &none &none      &none      &none      &none        &none    &kp INS  &kp HOME    &kp PG_DN   &kp PG_UP &kp END   &none 
-                  &kp ESC &lt NAV BKSP &kp ENTER                &kp TAB &kp SPACE &kp DEL
+   &none &none      &LA(TAB)   &LC(TAB)   &none        &none       &none    &none       &none       &none     &none     &none 
+   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none       &kp CAPS &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &none 
+   &none &none      &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp LC(B)   &kp INS  &kp HOME    &kp PG_DN   &kp PG_UP &kp END   &none 
+                     &kp ESC &lt NAV BKSP &kp ENTER                &kp TAB &kp SPACE &kp DEL
                        >;
                 };
 
                 med_layer {
                         label = "MED";
                         bindings = <
-   &none &none      &none      &none      &none        &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none 
+   &none &none      &none      &none      &tog RPG     &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none 
    &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &none    &none       &none       &none     &none                  &none
    &none &none      &none      &none      &none        &none    &none    &none       &none       &none     &bt BT_CLR             &none
                   &lt MED ESC &kp BKSP &kp ENTER                &kp TAB &kp SPACE &kp DEL
@@ -86,12 +108,12 @@
                 fkey_layer {
                         label = "FKY";
                         bindings = <
-   &none &kp F12    &kp F7     &kp F8     &kp F9       &kp PSCRN   &none    &none       &none       &none     &none    &none
+   &none &kp F12    &kp F7     &kp F8     &kp F9       &kp PSCRN   &none    &tog DIAB   &none       &none     &none    &none
    &none &kp F11    &kp F4     &kp F5     &kp F6       &none       &none    &kp RSHIFT  &kp RCTRL   &kp RALT  &kp RGUI &none
    &none &kp F10    &kp F1     &kp F2     &kp F3       &none       &none    &none       &none       &none     &none    &none
                         &kp ESC &kp BKSP &kp ENTER                 &kp TAB &kp SPACE &lt FKY DEL
                         >;
-                };
-
+                };                
+              
         };
 };
