@@ -68,9 +68,9 @@
                 nav_layer {
                         label = "NAV";
                         bindings = <
-   &none &none      &LA(TAB)   &LC(TAB)   &none        &none       &none    &none       &none       &none     &none     &none 
-   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none       &kp CAPS &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &none 
-   &none &none      &kp LC(X)  &kp LC(C)  &kp LC(V)    &kp LC(B)   &kp INS  &kp HOME    &kp PG_DN   &kp PG_UP &kp END   &none 
+   &none &none      &kp LA(TAB) &kp LC(TAB)  &none        &none       &none    &none       &none       &none     &none     &none 
+   &none &kp LGUI   &kp LALT    &kp LCTRL    &kp LSHIFT   &none       &kp CAPS &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT &none 
+   &none &none      &kp LC(X)   &kp LC(C)    &kp LC(V)    &kp LC(B)   &kp INS  &kp HOME    &kp PG_DN   &kp PG_UP &kp END   &none 
                      &kp ESC &lt NAV BKSP &kp ENTER                &kp TAB &kp SPACE &kp DEL
                        >;
                 };
