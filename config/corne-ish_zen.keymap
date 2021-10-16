@@ -61,7 +61,7 @@
    &none &kp F1     &kp F2     &kp F3     &kp F4       &kp F5   &kp Y &kp U        &kp I         &kp O        &kp P          &none 
    &none &kp A      &kp S      &kp LCTRL  &kp LSHIFT   &kp TAB  &kp H &kp J        &kp K         &kp L        &kp QUOT       &none 
    &none &kp N1     &kp N2     &kp N3     &kp N4       &kp B    &kp N &kp M        &kp CMMA      &kp DOT      &kp FSLH       &none 
-                        &kp ESC &kp SAPCE &kp ENTER    &kp TAB &kp SPACE &lt FKY DEL
+                        &kp ESC &kp SPACE &kp ENTER    &kp TAB &kp SPACE &lt FKY DEL
                         >;
                 };
 
