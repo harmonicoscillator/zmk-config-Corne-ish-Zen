@@ -79,7 +79,7 @@
                         label = "MED";
                         bindings = <
    &none &none      &none      &none      &tog RPG     &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none 
-   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &none    &none       &none       &none     &none                  &none
+   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_SEL 8 &bt BT_SEL 9  &none
    &none &none      &none      &none      &none        &none    &none    &none       &none       &none     &bt BT_CLR             &none
                   &lt MED ESC &kp BKSP &kp ENTER                &kp TAB &kp SPACE &kp DEL
                        >;
