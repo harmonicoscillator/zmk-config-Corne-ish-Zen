@@ -78,9 +78,9 @@
                 med_layer {
                         label = "MED";
                         bindings = <
-   &none &none      &none      &none      &tog RPG     &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none 
-   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &none        &none        &none        &none        &none         &none
-   &none &none      &none      &none      &none        &none    &none    &none       &none       &none     &bt BT_CLR             &none
+   &none &none      &none      &none      &tog RPG     &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4  &none 
+   &none &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT   &none    &none        &kp C_MUTE   &kp C_VOL_DOWN   &kp C_VOL_UP   &none         &none
+   &none &none      &none      &none      &none        &none    &none        &none        &none            &none          &bt BT_CLR    &none
                   &lt MED ESC &kp BKSP &kp ENTER                &kp TAB &kp SPACE &kp DEL
                        >;
                 };
