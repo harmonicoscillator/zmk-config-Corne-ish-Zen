@@ -20,15 +20,27 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
+        lhm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "LEFT_HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;               
         };
+
+        rhm: right_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;               
+        };        
     };
     
         keymap {
@@ -38,7 +50,7 @@
                         label = "QWERTY";
                         bindings = <
    &none &kp Q      &kp W      &kp E       &kp R        &kp T    &kp Y &kp U        &kp I         &kp O        &kp P          &none 
-   &none &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G    &kp H &hm RSHIFT J &hm RCTRL K   &hm RALT L   &hm RGUI QUOT  &none 
+   &none &lhm LGUI A &lhm LALT S &lhm LCTRL D &lhm LSHIFT F &kp G    &kp H &rhm RSHIFT J &rhm RCTRL K   &rhm RALT L   &rhm RGUI QUOT  &none 
    &none &kp Z      &kp X      &kp C       &kp V        &kp B    &kp N &kp M        &kp CMMA      &kp DOT      &kp FSLH       &none 
                            &lt MED ESC &lt NAV BKSP &kp ENTER    &lt SYM TAB &lt NUM SPACE &lt FKY DEL
                         >;
