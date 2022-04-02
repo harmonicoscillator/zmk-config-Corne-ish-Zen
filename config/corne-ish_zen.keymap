@@ -49,10 +49,10 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &none &kp Q      &kp W      &kp E       &kp R        &kp T    &kp Y &kp U        &kp I         &kp O        &kp P          &none 
+   &none &kp Q       &kp W       &kp E        &kp R         &kp T    &kp Y &kp U         &kp I          &kp O         &kp P           &none 
    &none &lhm LGUI A &lhm LALT S &lhm LCTRL D &lhm LSHIFT F &kp G    &kp H &rhm RSHIFT J &rhm RCTRL K   &rhm RALT L   &rhm RGUI QUOT  &none 
-   &none &kp Z      &kp X      &kp C       &kp V        &kp B    &kp N &kp M        &kp CMMA      &kp DOT      &kp FSLH       &none 
-                           &lt MED ESC &lt NAV BKSP &kp ENTER    &lt SYM TAB &lt NUM SPACE &lt FKY DEL
+   &none &kp Z       &kp X       &kp C        &kp V         &kp B    &kp N &kp M         &kp CMMA       &kp DOT       &kp FSLH        &none 
+                           &lt MED ESC &lt NAV BKSP &kp ENTER        &lt SYM TAB &lt NUM SPACE &lt FKY DEL
                         >;
                 };
 
@@ -70,10 +70,10 @@
                 diab_layer {
                         label = "DIAB";
                         bindings = <
-   &none &kp F1     &kp F2     &kp F3     &kp F4       &kp F5   &kp Y &kp U        &kp I         &kp O        &kp P          &none 
-   &none &kp A      &kp S      &kp LCTRL  &kp LSHIFT   &kp TAB  &kp H &kp J        &kp K         &kp L        &kp QUOT       &none 
-   &none &kp N1     &kp N2     &kp N3     &kp N4       &kp B    &kp N &kp M        &kp CMMA      &kp DOT      &kp FSLH       &none 
-                        &kp ESC &kp SPACE &kp ENTER    &kp TAB &kp SPACE &lt FKY DEL
+   &none &kp Q     &kp W     &kp E     &kp R       &kp T   &kp Y   &kp U        &kp I         &kp O        &kp P          &none 
+   &none &kp A     &kp S     &kp D     &kp F       &kp G   &kp H   &kp J        &kp K         &kp L        &kp QUOT       &none 
+   &none &kp Z     &kp X     &kp C     &kp V       &kp B   &kp N   &kp M        &kp CMMA      &kp DOT      &kp FSLH       &none 
+                        &kp ESC &kp SPACE &kp TAB                  &kp TAB &kp SPACE &lt FKY DEL
                         >;
                 };
 
